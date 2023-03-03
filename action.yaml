@@ -1,0 +1,12 @@
+name: evercode-testfile
+description: This action will return the testfile that needs to run
+inputs:
+  myInput:
+    description: 'The input string'
+    required: true
+outputs:
+  myOutput:
+    description: 'The output string'
+runs:
+  using: 'node12'
+  main: 'index.js'
