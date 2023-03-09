@@ -5,7 +5,7 @@ const fs = require('fs');
 
 async function run() {
   try {
-    const fileUrl = 'https://devpass-api-bucket.s3.amazonaws.com/testes/';
+    const fileUrl = `https://devpass-api-bucket.s3.amazonaws.com/testes/${core.getInput('file_name')}`;
     const fileName = core.getInput('file_name');
 
     await downloadFile(fileUrl, fileName);
