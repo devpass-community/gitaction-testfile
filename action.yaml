@@ -1,12 +1,10 @@
-name: evercode-testfile
-description: This action will return the testfile that needs to run
+name: 'Evercode check'
+description: 'Downloads a file and runs a yarn command'
 inputs:
-  myInput:
-    description: 'The input string'
+  file_name:
+    description: 'The name of the file to save as'
     required: true
-outputs:
-  myOutput:
-    description: 'The output string'
+outputs: {}
 runs:
   using: 'node12'
-  main: 'index.js'
+  main: 'dist/index.js'
